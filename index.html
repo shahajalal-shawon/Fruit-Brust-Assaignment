@@ -31,34 +31,51 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+        #slide1, #slide2{
+          background-color: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+        }
     </style>
 </head>
 <body class="font-lato">
     <header>
       <!-- nav section -->
-     <nav>   
-      <div class="navbar container mx-auto justify-between rounded-full px-10 bg-rose-600  ">
-        <div>
-          <ul class="flex gap-8 text-x text-white">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Shops</li>
-            <li>All Fruits</li>
+      <div class="container mx-auto navbar rounded-full px-10 bg-rose-600 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a> Shop</a></li>
+              <li><a> All Fruits</a></li>
+            </ul>
+          </div>
+         <div class="flex gap-8 text-xl font-bold text-white">
+          <ul class="menu menu-horizontal px-1 hidden lg:flex">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a> Shop</a></li>
+            <li><a> All Fruits</a></li>
           </ul>
+         </div>
         </div>
-        <div class="flex gap-5   ">
-          <img class="w-[55px]" src="images/logo.png" alt="">
-          <h3 class="text-5xl font-bold text-white">Fruit Brust</h3>
+    
+        <div class="navbar-center ">
+          <div class="flex ">
+            <img class="w-[55px]" src="images/logo.png" alt="">
+            <h3 class="lg:text-5xl text-2xl font-bold text-white">Fruit Brust</h3>
+          </div>
         </div>
-       
-        <div class=" gap-2">
-          <div class="form-control">
-            <input type="text" placeholder="Search" class="input input-bordered  rounded-full bg-white w-[400px]"/> 
+
+        <div class="navbar-end hidden md:block">
+          <div class="form-control w-[400px]">
+            <input type="text" placeholder="Search" class="input input-bordered  md:w-auto rounded-full bg-white gap-2" />
           </div>
         </div>
       </div>
-      
-    </nav>
+ 
     </header>
 
     <main>
@@ -66,27 +83,48 @@
     <section class="container mx-auto my-14">
       <div class="carousel w-full">
         <!-- slide 1 -->
-        <div id="slide1" class="carousel-item relative w-full">
+        <div id="slide1" class="carousel-item relative w-full h-full">
           <img src="images/banner1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a> 
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
+          <div class="absolute md:left-20 left-5 right-5 md:right-20  top-0 bottom-0 flex justify-center items-center ">
+            <div class="md:w-1/2 mx-auto text-center text-white space-y-4 ">
+              <h2 class="md:text-7xl text-2xl font-semibold ">Exotic tastes at your doorstep</h2>
+              <p class="text-lg">We supply highly quality organic products</p>
+              <button class="bg-[#F85559] md:py-4 md:px-8 py-2 px-4 rounded-lg font-semibold">Shop Now</button>
+            </div>
+          </div>
         </div> 
-        <!-- slide 2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/banner2.png" class="w-full" />
+          <img src="images/banner1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a> 
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
+          <div class="absolute md:left-20 left-5 right-5 md:right-20  top-0 bottom-0 flex justify-center items-center ">
+            <div class="md:w-1/2 mx-auto text-center text-white space-y-4 ">
+              <h2 class="md:text-7xl text-2xl font-semibold ">Exotic tastes at your doorstep</h2>
+              <p class="text-lg">We supply highly quality organic products</p>
+              <button class="bg-[#F85559] md:py-4 md:px-8 py-2 px-4 rounded-lg font-semibold">Shop Now</button>
+            </div>
+          </div>
         </div> 
+      
         <!-- slide 3 -->
-        <div id="slide3" class="carousel-item relative w-full">
+        <div style=" background-color: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);" id="slide3" class="carousel-item relative w-full">
           <img src="images/banner3.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a> 
             <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <div class="absolute md:left-20 left-5 right-5 md:right-20  top-0 bottom-0 flex justify-center items-center ">
+            <div class="md:w-1/2 mx-auto text-center text-white space-y-4 ">
+              <h2 class="md:text-7xl text-2xl font-semibold ">Exotic tastes at your doorstep</h2>
+              <p class="text-lg">We supply highly quality organic products</p>
+              <button class="bg-[#F85559] md:py-4 md:px-8 py-2 px-4 rounded-lg font-semibold">Shop Now</button>
+            </div>
           </div>
         </div> 
         <!-- slide 4 -->
@@ -96,13 +134,258 @@
             <a href="#slide3" class="btn btn-circle">❮</a> 
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
+          <div class="absolute md:left-20 left-5 right-5 md:right-20  top-0 bottom-0 flex justify-center items-center ">
+            <div class="md:w-1/2 mx-auto text-center text-white space-y-4 ">
+              <h2 class="md:text-7xl text-2xl font-semibold ">Exotic tastes at your doorstep</h2>
+              <p class="text-lg">We supply highly quality organic products</p>
+              <button class="bg-[#F85559] md:py-4 md:px-8 py-2 px-4 rounded-lg font-semibold">Shop Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- fruits section -->
-    <section>
-      
+    <section class="w-[1196px] mx-auto md:block hidden">
+      <div class="flex justify-between  bg-slate-100 p-10 relative items-center -mt-48 rounded-lg">
+        <div>
+          <img class="w-[140px] " src="images/fruit1.png" alt="">
+          <h3 class="text-center font-medium text-xl text-black">Grape</h3>
+        </div>
+        <div>
+          <img class="w-[140px] " src="images/fruit2.png" alt="">
+          <h3 class="text-center font-medium text-xl text-black">Orange</h3>
+        </div>
+        <div>
+          <img class="w-[140px] " src="images/fruit3.png" alt="">
+          <h3 class="text-center font-medium text-xl text-black">Mango</h3>
+        </div>
+        <div>
+          <img class="w-[140px] " src="images/fruit4.png" alt="">
+          <h3 class="text-center font-medium text-xl text-black">Strawberry</h3>
+        </div>
+        <div>
+          <img class="w-[140px] " src="images/fruit5.png" alt="">
+          <h3 class="text-center font-medium text-xl text-black">Dalim</h3>
+        </div>
+      </div>
     </section>
+    
+    <!-- deal of the day section -->
+
+    <section class="container mx-auto my-24">
+      <div class="flex grid-cols-1 md:flex-cols-2  justify-around">
+        <div>
+          <h3 class="text-4xl lg:text-5xl font-extrabold mb-6">Deal of the day</h3>
+          <p class="text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex text-2xl  gap-16">
+          <div>
+            <h3 class="text-5xl font-extrabold">29</h3>
+            <p class="text-sm font-medium">Days</p>
+          </div>
+          <div>
+            <h3 class="text-5xl font-extrabold">15</h3>
+            <p class="text-sm font-medium">Hours</p>
+          </div>
+          <div>
+            <h3 class="text-5xl font-extrabold">25</h3>
+            <p class="text-sm font-medium">Minutes</p>
+          </div>
+          <div>
+            <h3 class="text-5xl font-extrabold">08</h3>
+            <p class="text-sm font-medium">Second</p>
+          </div>
+        </div>
+        </div>
+
+
+
+      <div class=" justify-between mt-12 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center items-center " >
+
+<!-- fruit card 1 -->
+        <div class="border-2 py-20 px-28 ">
+          <img src="images/fruit6.png" alt="">
+          <h4>12.90$ - 18.85$</h4>
+          <hr>
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+
+          <div>
+
+              <!-- The button to open modal -->
+             <label for="my_modal_7" class="btn">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+              <div class="modal space-x-4">
+               <div class="modal-box items-center">
+               <div class="flex flex-col justify-center items-center">
+                <img src="images/fruit8.png" alt="">
+            <h3 class="text-lg font-bold text-center">Red Dragon</h3>
+            <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+           <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           </div>
+            <div class="text-center">
+             <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">close</button>
+             <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">Buy Now</button>
+               </div>
+               </div>
+             </div>
+              <label class="modal-backdrop" for="my_modal_7">Close</label>
+           </div>
+             </div>
+         </div>
+
+         <!-- fruit card 2 -->
+        <div class="border-2 py-20 px-28">
+          <img src="images/fruit7.png" alt="">
+          <h4>12.90$ - 18.85$</h4>
+          <hr>
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+
+          <div>
+
+              <!-- The button to open modal -->
+             <label for="my_modal_7" class="btn">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+              <div class="modal space-x-4">
+               <div class="modal-box items-center">
+               <img src="images/fruit7.png" alt="">
+         <h3 class="text-lg font-bold text-center">Red Dragon</h3>
+            <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+           <div class="rating items-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           </div>
+         <div class="text-center">
+          <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">close</button>
+          <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">Buy Now</button>
+         </div>
+             </div>
+              <label class="modal-backdrop" for="my_modal_7">Close</label>
+           </div>
+             </div>
+         </div>
+
+         <!-- fruit card 3 -->
+        <div class="border-2 py-20 px-28">
+          <img src="images/fruit8.png" alt="">
+          <h4>12.90$ - 18.85$</h4>
+          <hr>
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+
+          <div>
+
+              <!-- The button to open modal -->
+             <label for="my_modal_7" class="btn">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+              <div class="modal space-x-4">
+               <div class="modal-box items-center">
+               <img src="images/fruit8.png" alt="">
+         <h3 class="text-lg font-bold text-center">Red Dragon</h3>
+            <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+           <div class="rating items-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           </div>
+         <div class="text-center">
+          <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">close</button>
+          <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">Buy Now</button>
+         </div>
+             </div>
+              <label class="modal-backdrop" for="my_modal_7">Close</label>
+           </div>
+             </div>
+         </div>
+
+         <!-- fruit card 4 -->
+        <div class="border-2 py-20 px-28">
+          <img src="images/fruit9.png" alt="">
+          <h4>12.90$ - 18.85$</h4>
+          <hr>
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+
+
+
+          <div>
+              <!-- The button to open modal -->
+             <label for="my_modal_7" class="btn">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+              <div class="modal space-x-4">
+               <div class="modal-box ">
+              
+                <img class="w-80 h-80 mx-auto" src="images/fruit9.png" alt="">
+                <h3 class="text-lg font-bold text-center"></h3>
+                <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating items-center">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+              <div class="text-center">
+                <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">close</button>
+                <button class="border-2 border-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold ">Buy Now</button>
+              </div>
+            
+             </div>
+              <label class="modal-backdrop" for="my_modal_7">Close</label>
+           </div>
+             </div>
+         </div>
+         </div>
+         <div class="my-20 text-center">
+          <button class=" bg-[#F85559] px-8 py-5 rounded-lg text-2xl font-bold">Shop All</button>
+         </div>
+    </section>
+
+
+    
 
     </main>
 
